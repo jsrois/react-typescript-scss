@@ -7,6 +7,13 @@ The goal of this is to learn how to set up a basic frontend project, including s
 - react
 - scss
 
+### Things we want to do:
+
+- [ ] Run the project
+- [ ] Run the tests
+- [ ] Watch the files and auto compile
+ 
 ## Progress Record
 
 - Using `yarn init` to create a new package json and two directories, `src` and `test`
+- adding typescript using `yarn add typescript` and then generating a typescript configuration file using `tsc --init`

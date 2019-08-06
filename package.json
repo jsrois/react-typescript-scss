@@ -4,5 +4,11 @@
   "description": "An example frontend app using yarn, typescript, react and scss",
   "main": "index.js",
   "author": "Javier Sánchez <javier.sanchez.rois@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "echo testing..."
+  },
+  "dependencies": {
+    "typescript": "^3.5.3"
+  }
 }
