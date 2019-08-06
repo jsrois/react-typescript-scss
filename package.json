@@ -1,0 +1,8 @@
+{
+  "name": "react-typescript-scss",
+  "version": "1.0.0",
+  "description": "An example frontend app using yarn, typescript, react and scss",
+  "main": "index.js",
+  "author": "Javier Sánchez <javier.sanchez.rois@gmail.com>",
+  "license": "MIT"
+}
