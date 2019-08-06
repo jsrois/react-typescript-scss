@@ -6,9 +6,13 @@
   "author": "Javier Sánchez <javier.sanchez.rois@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "echo testing..."
+    "start": "webpack-dev-server --mode development --hot"
   },
   "dependencies": {
-    "typescript": "^3.5.3"
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
