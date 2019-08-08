@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    entry: path.join(__dirname, '/src/app.ts'),
+    entry: path.join(__dirname, '/src/main.tsx'),
     output: {
-        filename: 'app.js',
-        path: __dirname
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
@@ -13,6 +13,13 @@ module.exports = {
                 loader: 'ts-loader',
                 exclude: /node_modules/,
             },
+            {
+                test: /\.css$/,
+                use: [
+                  'style-loader',
+                  'css-loader'
+                ]
+              }
         ]
     },
     resolve: {

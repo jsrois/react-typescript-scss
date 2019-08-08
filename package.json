@@ -2,13 +2,20 @@
   "name": "react-typescript-scss",
   "version": "1.0.0",
   "description": "An example frontend app using yarn, typescript, react and scss",
-  "main": "index.js",
+  "private": true,
   "author": "Javier Sánchez <javier.sanchez.rois@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot"
+    "start": "webpack-dev-server --mode development --config webpack.config.js --content-base dist/",
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
+    "@types/react": "^16.8.25",
+    "@types/react-dom": "^16.8.5",
+    "css-loader": "^3.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "style-loader": "^1.0.0",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
     "webpack": "^4.39.1",
