@@ -1,8 +1,12 @@
 import * as React from "react";
+import { useState } from "react";
 
-export const App = (props: { name: string }): JSX.Element => (
-  <div className="container">
-    <h1>Hello from react</h1>
-    <h2>Welcome {props.name}!</h2>
+export const App = (): JSX.Element => {
+  const [count, setCount] = useState(0);
+
+  return (
+  <div>
+    <div>{count === 0? "You have no clips yet. Push the button to start generating clips." : `Number of clips is ${count}`}</div>
+    <button onClick={() => setCount(count+1)}>New clip</button>
   </div>
-);
+)};

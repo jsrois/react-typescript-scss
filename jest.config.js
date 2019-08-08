@@ -1,5 +1,6 @@
 
 module.exports = {
-  rootDir: "test",
-  testEnvironment: "node"
+  rootDir: ".",
+  testEnvironment: "jsdom",
+  preset: 'ts-jest'
 };
